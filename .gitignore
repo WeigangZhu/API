@@ -2,4 +2,8 @@
 *.a
 *.so
 *.exe
+*/bin/*
+*/build/*
+*.txt
+*~
 

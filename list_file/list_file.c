@@ -1,3 +1,5 @@
+#define DEBUG
+
 #include"list_file.h"
   
 files_list_t* list_files(char *dir_name)  
@@ -59,8 +61,8 @@ files_list_t* list_files(char *dir_name)
     return re_files_list;
 }  
   
-
-/* 测试部分
+#ifdef DEBUG
+//测试部分
 int main(int argc, char **argv)  
 {  
   
@@ -78,5 +80,6 @@ int main(int argc, char **argv)
     return 0;  
 }
 
- */ 
+#endif
+
 
